@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "module": "ESNext",
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@fixtures/*": ["./fixtures/*"],
+      "@pages/*": ["./pages/*"],
+      "@utils/*": ["./utils/*"]
+    }
+  },
+  "include": ["tests/**/*", "fixtures/**/*", "pages/**/*", "utils/**/*"]
+}

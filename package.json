@@ -1,0 +1,23 @@
+{
+  "name": "opencart-automation-playwright-ts",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "@types/node": "^22.0.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.6.3"
+  },
+  "scripts": {
+  "test": "playwright test",
+  "test:headed": "playwright test --headed",
+  "test:debug": "playwright test --debug",
+  "report": "playwright show-report reports/html",
+  "codegen": "playwright codegen",
+
+  "test:chromium": "npx playwright test --project=Chromium --headed --workers=1",
+  "test:firefox": "npx playwright test --project=Firefox --headed --workers=1",
+  "test:webkit": "npx playwright test --project=WebKit --headed --workers=1",
+  "test:all:serial": "npm run test:chromium && npm run test:firefox && npm run test:webkit"
+  }
+}
